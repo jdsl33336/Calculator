@@ -1,12 +1,15 @@
 package Calculator;
 
-/**
- * Наследник Div
- * переопределить Calculate -
- */
-public class Div extends Calculator{
- @Override
- void Calculate(){
-     System.out.println(x - y);
- }
+public class Div extends Calculator {
+    public Div(){
+        double x = 2;
+        double y = 3;
+    }
+    @Override
+    public void calculate(double x, double y) throws ArithmeticException{
+        if (y == 0.0) {
+            throw new ArithmeticException("Деление на ноль запрещено");
+        }
+        System.out.println(x / y);
+    }
 }

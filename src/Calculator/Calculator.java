@@ -4,8 +4,11 @@ package Calculator;
  *
  */
 public class Calculator {
-    int x, y;
-    void Calculate(){
+    public Calculator(){
+        double x = 2;
+        double y = 3;
+    }
+      public void calculate(double x, double y){
         System.out.println(x*y);
 
     }
