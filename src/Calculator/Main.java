@@ -8,6 +8,6 @@ public class Main {
         Calculator div = new Div();
         sum.calculate(4, 9);
         sub.calculate(4, 9);
-        div.calculate(4, 0);
+        div.calculate(4, 7);
     }
 }
